@@ -1,7 +1,7 @@
 //Loading the Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/ARAB-KITCHEN-EQUIPMENT/_service-worker.js', {scope: '/ARAB-KITCHEN-EQUIPMENT/'});
+    navigator.serviceWorker.register('/ARAB-KITCHEN-EQUIPMENT/component-add-to-home/_service-worker.js', {scope: '/ARAB-KITCHEN-EQUIPMENT/component-add-to-home/'});
   });
 // Files required to make this app work offline
 var REQUIRED_FILES = [
