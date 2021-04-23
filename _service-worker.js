@@ -1,13 +1,8 @@
 //Loading the Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/ARAB-KITCHEN-EQUIPMENT/component-add-to-home/_service-worker.js', {scope: '/ARAB-KITCHEN-EQUIPMENT/component-add-to-home/'});
+    navigator.serviceWorker.register('/products/duodrawer/_service-worker.js', {scope: '/products/duodrawer/'});
   });
-// Files required to make this app work offline
-var REQUIRED_FILES = [
-    'index.html'
-];
-
 self.addEventListener('install', function(event) {
   // Perform install step:  loading each required file into cache
   event.waitUntil(
