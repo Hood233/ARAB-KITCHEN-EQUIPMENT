@@ -3,9 +3,6 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/ARAB-KITCHEN-EQUIPMENT/_service-worker.js', {scope: '/ARAB-KITCHEN-EQUIPMENT/'});
   });
-// Cache name
-var CACHE_NAME = 'Sticky-Cache-V10';
-
 // Files required to make this app work offline
 var REQUIRED_FILES = [
     'index.html'
