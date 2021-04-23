@@ -5,7 +5,11 @@ var CACHE_NAME = 'Sticky-Cache-V10';
 var REQUIRED_FILES = [
     'index.html'
 ];
-
+//Loading the Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/ARAB-KITCHEN-EQUIPMENT/_service-worker.js', {scope: '/ARAB-KITCHEN-EQUIPMENT/'});
+  });
 self.addEventListener('install', function(event) {
   // Perform install step:  loading each required file into cache
   event.waitUntil(
